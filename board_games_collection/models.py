@@ -3,7 +3,7 @@ from django.db import models
 
 class BoardGames(models.Model):
     tesera_id = models.IntegerField()
-    tesera_name = models.CharField(max_length=1024)
+    tesera_name = models.CharField("Название игры на Тесера", max_length=1024)
     tesera_rating_user = models.FloatField()
     tesera_n10_rating = models.FloatField()
     bgg_id = models.IntegerField()
